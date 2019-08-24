@@ -6,13 +6,13 @@ package datastructure
  * 이진 탐색 트리 구현 (Java)
  */
 
-data class Node(
-    var data: Int,
-    var left: Node? = null,
-    var right: Node? = null
-)
-
 class BinarySearchTree {
+
+    data class Node(
+        var data: Int,
+        var left: Node? = null,
+        var right: Node? = null
+    )
 
     var root: Node? = null
 
@@ -148,8 +148,7 @@ class BinarySearchTree {
             }
 
             rightMin.left = cur.left // 왼쪽 서브트리 연결. 오른쪽 서브트리는 연결되어있음
-        }// Case 3 : 두개의 자식 노드를 갖는 경우
-        // Case 2 : 하나의 자식 노드를 갖는 경우
+        }
 
         return true
     }
