@@ -1,9 +1,9 @@
-package programmers;
+package programmers.hash;
 
 import java.util.HashMap;
 
 public class Programmers1 {
-    public String solution(String[] participant, String[] completion) {
+    private String solution(String[] participant, String[] completion) {
         HashMap hashMap = new HashMap<String, Integer>();
 
         for (String s : completion) {
