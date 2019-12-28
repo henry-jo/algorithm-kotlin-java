@@ -1,5 +1,8 @@
 package impl
 
+/**
+ * 토너먼트 문제
+ */
 class BOJ_1057 {
     fun solve() {
         var (n, kim, lim) = readLine()!!.split(" ").map { it.toInt() }

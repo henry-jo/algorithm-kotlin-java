@@ -18,6 +18,7 @@ class BOJ_1197 {
             edges.add(Edge(x, y, cost))
         }
 
+        // 우선 가중치 적은 순서대로 정렬
         edges.sortBy { it.cost }
 
         parent = IntArray(v + 1)
