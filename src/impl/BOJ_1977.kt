@@ -12,7 +12,7 @@ class BOJ_1977 {
         var minVal = Int.MAX_VALUE
 
         for(i in m .. n) {
-            if (sqrt(i.toDouble()) % 1.0f == 0.0) {
+            if (sqrt(i.toDouble()) % 1.0f == 0.0) { // 완전제곱수인지 확인
                 sum += i
                 minVal = min(i, minVal)
             }
